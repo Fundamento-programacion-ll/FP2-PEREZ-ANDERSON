@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package MODELO;
+package CONEXION;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -16,7 +16,7 @@ import java.sql.SQLException;
 public class conector {
        Connection conexion = null;
     String url = 
-"jdbc:mysql://localhost:3306/farmacia?useSSL=false";
+"jdbc:mysql://localhost:3306/prueba?useSSL=false";
     String usuario = "userPrueba";
     String password = "clavePrueba";
     
