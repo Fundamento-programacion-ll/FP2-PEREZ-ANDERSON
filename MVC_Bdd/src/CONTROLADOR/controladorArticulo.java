@@ -21,8 +21,8 @@ public class controladorArticulo {
         ResultSet rs = null;
     
     public void ingresarArticlos(articulo nuevoArticulo){
-        String sqlInsert = 
-"insert into articulos (nombre,descripcion,precio) values(?,?,?)";
+        String sqlInsert
+                = "insert into articulos (nombre,descripcion,precio) values(?,?,?)";
         try {
             ps = conexion.getConxion().prepareStatement(sqlInsert);
             ps.setString(1, nuevoArticulo.getNombre());
@@ -33,7 +33,7 @@ public class controladorArticulo {
         } catch (SQLException ex) {
             System.err.println("error: " + ex);
             JOptionPane
-.showMessageDialog(null, "Error al ingresar datos");
+                    .showMessageDialog(null, "Error al ingresar datos");
             //Logger.getLogger(controladorArticulo.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
