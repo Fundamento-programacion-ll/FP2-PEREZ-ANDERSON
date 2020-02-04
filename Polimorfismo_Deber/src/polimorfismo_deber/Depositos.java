@@ -12,10 +12,12 @@ package polimorfismo_deber;
 public class Depositos extends Transaccion{
     double monto;
 
-    public Depositos(double monto) {
-      
+    public Depositos(double monto, String Ncuenta) {
+        super(Ncuenta);
         this.monto = monto;
     }
+
+    
 
    
     public double getMonto() {
@@ -36,7 +38,7 @@ public class Depositos extends Transaccion{
     public String toString() {
         return "-----------------"
                 +"\nDepositos : " +monto
-                +"\n# Cuenta : "+obten_cuenta()
+                +"\n# Cuenta : "+getNcuenta()
                 +"\n-----------------";
     }
     

@@ -5,9 +5,17 @@
  */
 package polimorfismo_deber;
 
+import java.util.Scanner;
+
+
 
 public abstract class Transaccion {
     private String Ncuenta;
+Scanner sc = new Scanner(System.in);
+
+    public Transaccion(String Ncuenta) {
+        this.Ncuenta = Ncuenta;
+    }
 
     
 
@@ -19,11 +27,14 @@ public abstract class Transaccion {
         this.Ncuenta = Ncuenta;
     }
     
-    public String obten_cuenta(){
-    String N="1234567";
-    this.Ncuenta=N;
-        return Ncuenta;
-    }
+    //public String obten_cuenta(){
+       // String N;
+        //N="123456";
+     
+        
+    //this.Ncuenta=N;
+      //  return Ncuenta;
+    //}
     
         
     

@@ -12,9 +12,12 @@ package polimorfismo_deber;
 public class Solicitud_Saldo extends Transaccion{
     double saldo;
 
-    public Solicitud_Saldo(double saldo) {
+    public Solicitud_Saldo(double saldo, String Ncuenta) {
+        super(Ncuenta);
         this.saldo = saldo;
     }
+
+  
 
    
 
@@ -39,7 +42,7 @@ public class Solicitud_Saldo extends Transaccion{
     @Override
     public String toString() {
         return "-----------------"
-                +"\n# Cuenta : "+obten_cuenta()
+                +"\n# Cuenta : "+getNcuenta()
                 +"\nSaldo cuenta : "+getSaldo()
                 +"\n-----------------";
     }
